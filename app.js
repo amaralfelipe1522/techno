@@ -2,7 +2,7 @@ const vm = new Vue ({
     el: "#app",
     data: {
         produtos: [],
-        descricao: ""
+        detalhes: false,
     },
     filters: {
         precoFormat(valor) {
@@ -22,7 +22,7 @@ const vm = new Vue ({
             fetch(`/api/produtos/${id}/dados.json`)
             .then(resp => resp.json())
             .then(resp => {
-                this.descricao = resp;
+                this.detalhes = resp;
             })
         },
     },

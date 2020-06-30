@@ -20,7 +20,7 @@ body {
     padding: 0 80px;
 }
 
-/* Lista Produtos */
+/* Listar Produtos */
 
 .produtos {
     max-width: 900px;
@@ -51,4 +51,10 @@ body {
 
 .produto_preco {
     color: rgba(0,0,0,.5);
+}
+
+/* Modal */
+
+.modal {
+    background: #ffffff;
 }
